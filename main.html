@@ -10,33 +10,215 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        padding: 50px;
+        overflow: hidden;
+        min-width: 768px;
+        background: linear-gradient(45deg, cyan, gray);
+      }
+
+      .edit {
+        border-top: 0px;
+        border-right: 0px;
+        border-bottom: 5px;
+        border-left: 0px;
+        border-style: solid;
+        border-color: blue;
+      }
+    </style>
   </head>
   <body>
-    <div id="about">
-      <section>
-        <img
-          src="Images/profile-pic.png"
-          alt="my profile pic"
-          width="200"
-          height="209"
-        />
+    <main class="row">
+      <section
+        class="col-6 row d-flex justify-content-center align-items-center"
+      >
+        <!-- Intro section -->
+        <div class="col-5 w-auto h-auto mb-5">
+          <img
+            src="Images/profile-pic.png"
+            alt="profile-pic"
+            width="200"
+            height="209"
+          />
+        </div>
+        <section class="col-7">
+          <p>
+            <span class="fw-bold">Name -</span
+            ><span class="d-inline-block mx-2"> Rahul Srivastava </span><br />
+            <span class="fw-bold">Profile -</span
+            ><span class="d-inline-block mx-2"> Full Stack Web Developer </span
+            ><br />
+            <span class="fw-bold">Email -</span
+            ><span class="d-inline-block mx-2">
+              imrahulsrivastava1@gmail.com</span
+            >
+          </p>
+        </section>
+        <section class="row my-5">
+          <h3 class="col"><span class="edit">Skills</span></h3>
+          <!-- progress bar and all -->
+          <ul class="list-unstyled px-4">
+            <li>
+              Java
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-75"></div>
+              </div>
+            </li>
+            <li>
+              DSA
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-50"></div>
+              </div>
+            </li>
+            <li>
+              DBMS
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-25"></div>
+              </div>
+            </li>
+            <li>
+              SQL
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-25"></div>
+              </div>
+            </li>
+            <li>
+              Operating System
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-25"></div>
+              </div>
+            </li>
+            <li>
+              Network System
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="25"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-25"></div>
+              </div>
+            </li>
+            <li>
+              HTML
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="100"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-100"></div>
+              </div>
+            </li>
+            <li>
+              CSS
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-75"></div>
+              </div>
+            </li>
+            <li>
+              Bootstrap
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-50"></div>
+              </div>
+            </li>
+            <li>
+              Javascript
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar w-0"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
       </section>
-      <section>
-        <section>
-          <h2>Name</h2>
-          <p>Rahul Srivastava</p>
-        </section>
-        <section>
-          <h2>Profile</h2>
-          <p>Full Stack Web Developer</p>
-        </section>
-        <section>
-          <h2>Email</h2>
-          <p>imrahulsrivastava1@gmail.com</p>
-        </section>
+      <section class="col-6">
+        <!-- About me section -->
+        <h1 class="p-2"><span class="edit">About Me</span></h1>
+        <p class="p-4">
+          Greetings! I'm Rahul Srivastava, an enthusiastic programmer who has
+          honed my skills in a variety of technologies. My expertise spans Java,
+          HTML, CSS, Bootstrap, and Data Structures & Algorithms (DSA). What
+          truly drives me is the ability to translate creative concepts into
+          functional, user-friendly web applications. I find immense
+          satisfaction in solving intricate problems through efficient and
+          elegant coding solutions.
+          <br />
+          <br />
+          My journey in programming has taught me the value of collaboration and
+          the importance of staying abreast of industry trends. I thrive in team
+          environments, where diverse perspectives come together to build
+          innovative solutions. Moreover, I'm committed to lifelong learning and
+          regularly seek out opportunities to expand my skill set. <br /><br />
+          When I'm not immersed in coding, you might find me pursuing my other
+          interests, such as travelling, watching anime, web series, etc.
+          <br /><br />
+          I'm always excited to explore new opportunities and collaborate on
+          exciting projects. Feel free to reach out, and together, we can turn
+          ideas into reality in the digital realm!
+        </p>
       </section>
-    </div>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
